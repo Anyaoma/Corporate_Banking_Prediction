@@ -7,6 +7,10 @@
 
 The data is organised such that each company is labelled either failed or alive. The data is effectively organised in batches of failed companies or alive companies. Some companies have just a single row of data for a particular year, some have two rows, and others have as many as 16 rows for 16 years. To maintain the temporal order within each data and let the machine learning model learn effectively from the data, while also preserving information from one-row companies, I chose to employ the use of summary statistics for each company, resulting in just a single row for each. This includes the calculation of mean, standard deviation, min, max, first, last, range(max – min), delta(last – first). By implementing these, one is effectively feeding the ML model informative data. 
 
+
+**MODEL TRAINING AND PREDICTION:**
+
+
 ![image](https://github.com/user-attachments/assets/c88f0de9-44c7-49d7-85f7-dc22a72c8969)
 
 
